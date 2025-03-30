@@ -19,15 +19,15 @@ function App() {
   };
 
   return (
-    <div className={`flex items-center justify-center min-h-screen px-4 transition-all duration-300 ${darkmode ? "bg-gray-900 text-white" : "bg-[#7fbde3] text-black"}`}>
+    <div className={`flex items-center justify-center  min-h-screen px-4 my-2 transition-all duration-300 ${darkmode ? "bg-gray-900 text-white" : "bg-[#7fbde3] text-black"}`}>
       <div className="app-container w-full max-w-lg p-6 sm:p-8 rounded-lg shadow-lg text-center bg-white dark:bg-gray-800">
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-3xl sm:text-4xl font-bold">🌤 Weather App</h1>
+          <h1 className="text-2xl  sm:text-4xl py-1 font-bold">🌤Weather App</h1>
           <button 
-            className="px-3 py-1 bg-gray-700 text-white rounded-md shadow-md hover:bg-gray-600 transition-all text-sm"
+            className=" px-4 py-1 bg-gray-700 text-white rounded-md shadow-md hover:bg-gray-600 transition-all text-sm"
             onClick={() => setdarkmode(!darkmode)}
           >
-            {darkmode ? "☀ Light Mode" : "🌙 Dark Mode"}
+            {darkmode ? "☀" : "🌙 "}
           </button>
         </div>
 
